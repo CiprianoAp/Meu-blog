@@ -706,82 +706,123 @@ function App() {
               {/* Contact Form */}
               <section id="contact" className="relative pb-16">
                 <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
-                  <Mail size={20} />
+                  <Mail size={20} className="animate-pulse" />
                 </div>
                 <div className="ml-14">
                   <form 
-                    className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transform hover:scale-102 transition-transform duration-300"
+                    className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg transform hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group"
                     action="mailto:aparecidomanuel20@gmail.com"
                     method="post"
                     encType="text/plain"
                   >
-                    <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+                    {/* Background gradient animation */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                    
+                    <h2 className="text-3xl font-bold mb-8 text-gray-800 dark:text-white flex items-center gap-3 group">
+                      <Mail className="inline-block transform group-hover:rotate-12 transition-transform duration-300" />
                       {translations[lang].contact}
+                      <span className="text-blue-500 animate-bounce">!</span>
                     </h2>
-                    <div className="space-y-4">
-                      <div className="flex flex-col sm:flex-row gap-4">
-                        <div className="flex-1">
-                          <label className="block bg-blue-500 text-white px-3 py-2 rounded-t-lg">
-                            {translations[lang].name_label}
+
+                    <div className="space-y-6">
+                      <div className="flex flex-col sm:flex-row gap-6">
+                        <div className="flex-1 group/input">
+                          <label className="block bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-t-xl transition-all duration-300 transform origin-left">
+                            <span className="inline-block transform group-focus-within/input:scale-110 transition-transform duration-300">
+                              {translations[lang].name_label}
+                            </span>
                           </label>
                           <input
                             type="text"
                             name="name"
-                            className="w-full border border-blue-500 p-2 rounded-b-lg dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                            className="w-full border-2 border-blue-500 p-3 rounded-b-xl dark:bg-gray-700 dark:text-white focus:ring-4 focus:ring-blue-500/50 focus:border-blue-600 transition-all duration-300 outline-none"
                             placeholder={translations[lang].name_label}
                           />
                         </div>
-                        <div className="flex-1">
-                          <label className="block bg-blue-500 text-white px-3 py-2 rounded-t-lg">
-                            {translations[lang].surname}
+                        <div className="flex-1 group/input">
+                          <label className="block bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-t-xl transition-all duration-300 transform origin-left">
+                            <span className="inline-block transform group-focus-within/input:scale-110 transition-transform duration-300">
+                              {translations[lang].surname}
+                            </span>
                           </label>
                           <input
                             type="text"
                             name="surname"
-                            className="w-full border border-blue-500 p-2 rounded-b-lg dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                            className="w-full border-2 border-blue-600 p-3 rounded-b-xl dark:bg-gray-700 dark:text-white focus:ring-4 focus:ring-blue-600/50 focus:border-blue-700 transition-all duration-300 outline-none"
                             placeholder={translations[lang].surname}
                           />
                         </div>
                       </div>
-                      <div>
-                        <label className="block bg-blue-500 text-white px-3 py-2 rounded-t-lg">
-                          {translations[lang].subject}
+
+                      <div className="group/input">
+                        <label className="block bg-gradient-to-r from-blue-700 to-purple-600 text-white px-4 py-2 rounded-t-xl transition-all duration-300 transform origin-left">
+                          <span className="inline-block transform group-focus-within/input:scale-110 transition-transform duration-300">
+                            {translations[lang].subject}
+                          </span>
                         </label>
                         <input
                           type="text"
                           name="subject"
-                          className="w-full border border-blue-500 p-2 rounded-b-lg dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                          className="w-full border-2 border-purple-600 p-3 rounded-b-xl dark:bg-gray-700 dark:text-white focus:ring-4 focus:ring-purple-500/50 focus:border-purple-700 transition-all duration-300 outline-none"
                           placeholder={translations[lang].subject}
                         />
                       </div>
-                      <div>
-                        <label className="block bg-blue-500 text-white px-3 py-2 rounded-t-lg">
-                          Email
+
+                      <div className="group/input">
+                        <label className="block bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4 py-2 rounded-t-xl transition-all duration-300 transform origin-left">
+                          <span className="inline-block transform group-focus-within/input:scale-110 transition-transform duration-300">
+                            Email
+                          </span>
                         </label>
                         <input
                           type="email"
                           name="email"
-                          className="w-full border border-blue-500 p-2 rounded-b-lg dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                          className="w-full border-2 border-indigo-600 p-3 rounded-b-xl dark:bg-gray-700 dark:text-white focus:ring-4 focus:ring-indigo-500/50 focus:border-indigo-700 transition-all duration-300 outline-none"
                           placeholder="Email"
                         />
                       </div>
-                      <div>
-                        <label className="block text-gray-700 dark:text-gray-300 mb-2">
-                          <Mail className="inline mr-2" />
-                          {translations[lang].message}
+
+                      <div className="group/input">
+                        <label className="block bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-4 py-2 rounded-t-xl transition-all duration-300 transform origin-left">
+                          <span className="inline-block transform group-focus-within/input:scale-110 transition-transform duration-300">
+                            <Mail className="inline mr-2 transform group-focus-within/input:rotate-12 transition-transform duration-300" />
+                            {translations[lang].message}
+                          </span>
                         </label>
                         <textarea
                           name="message"
-                          className="w-full border border-blue-500 p-4 rounded-lg h-32 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                          className="w-full border-2 border-blue-600 p-4 rounded-b-xl h-32 dark:bg-gray-700 dark:text-white focus:ring-4 focus:ring-blue-500/50 focus:border-blue-700 transition-all duration-300 outline-none resize-none"
+                          placeholder={`${translations[lang].message}...`}
                         ></textarea>
                       </div>
+
                       <button
                         type="submit"
-                        className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1 hover:shadow-xl"
+                        className="w-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25 active:scale-95 flex items-center justify-center gap-3 group/button"
                       >
-                        <Send className="inline-block mr-2" />
-                        {translations[lang].send}
+                        <Send className="inline-block transform group-hover/button:translate-x-1 group-hover/button:-translate-y-1 transition-transform duration-300" />
+                        <span className="text-lg font-semibold">{translations[lang].send}</span>
                       </button>
+                    </div>
+
+                    {/* Contact info cards */}
+                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <a 
+                        href={`mailto:aparecidomanuel20@gmail.com`}
+                        onClick={handleEmailClick}
+                        className="p-4 rounded-xl bg-gradient-to-r from-blue-500/10 to-blue-600/10 hover:from-blue-500/20 hover:to-blue-600/20 transition-all duration-300 flex items-center gap-3 group cursor-pointer"
+                      >
+                        <Mail className="text-blue-500 transform group-hover:rotate-12 transition-transform duration-300" />
+                        <span className="text-gray-600 dark:text-gray-300 group-hover:text-blue-500 transition-colors duration-300">aparecidomanuel20@gmail.com</span>
+                      </a>
+                      <a 
+                        href="https://wa.me/244936218497"
+                        onClick={handleWhatsAppClick}
+                        className="p-4 rounded-xl bg-gradient-to-r from-green-500/10 to-green-600/10 hover:from-green-500/20 hover:to-green-600/20 transition-all duration-300 flex items-center gap-3 group cursor-pointer"
+                      >
+                        <i className="fab fa-whatsapp text-2xl text-green-500 transform group-hover:rotate-12 transition-transform duration-300"></i>
+                        <span className="text-gray-600 dark:text-gray-300 group-hover:text-green-500 transition-colors duration-300">+244 936218497</span>
+                      </a>
                     </div>
                   </form>
                 </div>
