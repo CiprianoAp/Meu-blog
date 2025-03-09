@@ -30,7 +30,8 @@ const translations = {
     comingSoon: 'Coming Soon',
     comingDesc: 'More exciting projects are in development. Stay tuned!',
     meEncontre: 'Me Encontre - AJMcod',
-    meEncontreDesc: 'A location-based service platform developed with AJMcod. Features include user geolocation, service provider search, and real-time updates.'
+    meEncontreDesc: 'A location-based service platform developed with AJMcod. Features include user geolocation, service provider search, and real-time updates.',
+    rights: 'All rights reserved.'
   },
   pt: {
     about: 'Sobre',
@@ -60,7 +61,8 @@ const translations = {
     comingSoon: 'Em Breve',
     comingDesc: 'Mais projetos emocionantes estão em desenvolvimento. Fique ligado!',
     meEncontre: 'Me Encontre - AJMcod',
-    meEncontreDesc: 'Uma plataforma de serviços baseada em localização desenvolvida com AJMcod. Inclui geolocalização de usuários, busca de prestadores de serviços e atualizações em tempo real.'
+    meEncontreDesc: 'Uma plataforma de serviços baseada em localização desenvolvida com AJMcod. Inclui geolocalização de usuários, busca de prestadores de serviços e atualizações em tempo real.',
+    rights: 'Todos os direitos reservados.'
   },
   es: {
     about: 'Sobre',
@@ -90,7 +92,8 @@ const translations = {
     comingSoon: 'Próximamente',
     comingDesc: '¡Más proyectos emocionantes están en desarrollo. Mantente atento!',
     meEncontre: 'Me Encontre - AJMcod',
-    meEncontreDesc: 'Una plataforma de servicios basada en ubicación desarrollada con AJMcod. Incluye geolocalización de usuarios, búsqueda de proveedores de servicios y actualizaciones en tiempo real.'
+    meEncontreDesc: 'Una plataforma de servicios basada en ubicación desarrollada con AJMcod. Incluye geolocalización de usuarios, búsqueda de proveedores de servicios y actualizaciones en tiempo real.',
+    rights: 'Todos los derechos reservados.'
   }
 };
 
@@ -833,51 +836,108 @@ function App() {
             </div>
 
             {/* Footer */}
-            <footer className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-600 dark:text-gray-300">
-              <div>
-                <h3 className="flex items-center gap-2 text-blue-500 dark:text-blue-400 font-bold mb-2">
-                  <Phone size={20} className="animate-bounce" />
-                  {translations[lang].phone}
-                </h3>
-                <p>+244 936218497</p>
-                <p>+244 936218497</p>
-              </div>
-              <div>
-                <h3 className="flex items-center gap-2 text-blue-500 dark:text-blue-400 font-bold mb-2">
-                  <Mail size={20} className="animate-bounce" />
-                  Email
-                </h3>
-                <p>
-                  <a 
-                    href="mailto:aparecidomanuel20@gmail.com"
-                    onClick={handleEmailClick}
-                    className="hover:text-blue-500 transition-colors duration-300 hover:underline"
-                  >
-                    aparecidomanuel20@gmail.com
-                  </a>
-                </p>
-              </div>
-              <div>
-                <h3 className="text-blue-500 dark:text-blue-400 font-bold mb-2">
-                  {translations[lang].social}
-                </h3>
-                <div className="flex gap-4">
-                  <a href="https://www.facebook.com/ciprianodos.santos.773" className="text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
-                    <i className="fab fa-facebook text-xl"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/aparecido-manuel-54212720b/" className="text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
-                    <i className="fab fa-linkedin text-xl"></i>
-                  </a>
-                  <a 
-                    href="https://wa.me/244936218497"
-                    onClick={handleWhatsAppClick}
-                    className="text-gray-400 hover:text-green-500 dark:hover:text-green-400 transition-all duration-300 hover:scale-125 hover:rotate-12"
-                  >
-                    <i className="fab fa-whatsapp text-xl"></i>
-                  </a>
-                  <a href="#" className="text-gray-400 hover:text-pink-500 dark:hover:text-pink-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
-                    <i className="fab fa-instagram text-xl"></i>
-                  </a>
+            <footer className="mt-12 relative bg-white dark:bg-gray-800 rounded-t-3xl shadow-lg p-8 transform hover:scale-[1.02] transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-50 dark:to-blue-900/10 opacity-50 rounded-t-3xl pointer-events-none"></div>
+              
+              {/* Scroll to Top Button */}
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 group"
+              >
+                <ChevronDown size={24} className="transform rotate-180 group-hover:-translate-y-1 transition-transform duration-300" />
+              </button>
+
+              <div className="max-w-7xl mx-auto">
+                {/* Main Footer Content */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                  {/* Contact Info */}
+                  <div className="space-y-6">
+                    <div className="flex items-center gap-4 group">
+                      <div className="p-3 bg-blue-500/10 rounded-xl group-hover:bg-blue-500/20 transition-colors duration-300">
+                        <Phone size={24} className="text-blue-500" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                          {translations[lang].phone}
+                        </h3>
+                        <div className="space-y-1">
+                          <a href="tel:+244936218497" className="block text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
+                            +244 936218497
+                          </a>
+                          <a href="tel:+244936218497" className="block text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
+                            +244 936218497
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Email */}
+                  <div className="space-y-6">
+                    <div className="flex items-center gap-4 group">
+                      <div className="p-3 bg-blue-500/10 rounded-xl group-hover:bg-blue-500/20 transition-colors duration-300">
+                        <Mail size={24} className="text-blue-500" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                          Email
+                        </h3>
+                        <a 
+                          href="mailto:aparecidomanuel20@gmail.com"
+                          onClick={handleEmailClick}
+                          className="block text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 hover:underline"
+                        >
+                          aparecidomanuel20@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Social Links */}
+                  <div className="space-y-6">
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-blue-500/10 rounded-xl">
+                        <i className="fas fa-share-alt text-blue-500 text-xl"></i>
+                      </div>
+                      <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+                        {translations[lang].social}
+                      </h3>
+                    </div>
+                    <div className="flex gap-4">
+                      <a 
+                        href="https://www.facebook.com/ciprianodos.santos.773" 
+                        className="p-3 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-blue-500/20 hover:scale-110 transition-all duration-300 group"
+                      >
+                        <i className="fab fa-facebook text-xl text-gray-600 dark:text-gray-300 group-hover:text-blue-500"></i>
+                      </a>
+                      <a 
+                        href="https://www.linkedin.com/in/aparecido-manuel-54212720b/" 
+                        className="p-3 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-blue-500/20 hover:scale-110 transition-all duration-300 group"
+                      >
+                        <i className="fab fa-linkedin text-xl text-gray-600 dark:text-gray-300 group-hover:text-blue-500"></i>
+                      </a>
+                      <a 
+                        href="https://wa.me/244936218497"
+                        onClick={handleWhatsAppClick}
+                        className="p-3 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-green-500/20 hover:scale-110 transition-all duration-300 group"
+                      >
+                        <i className="fab fa-whatsapp text-xl text-gray-600 dark:text-gray-300 group-hover:text-green-500"></i>
+                      </a>
+                      <a 
+                        href="#" 
+                        className="p-3 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-pink-500/20 hover:scale-110 transition-all duration-300 group"
+                      >
+                        <i className="fab fa-instagram text-xl text-gray-600 dark:text-gray-300 group-hover:text-pink-500"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Copyright */}
+                <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+                  <p className="text-center text-gray-600 dark:text-gray-400">
+                    © {new Date().getFullYear()} Aparecido Manuel. {translations[lang].rights}
+                  </p>
                 </div>
               </div>
             </footer>
