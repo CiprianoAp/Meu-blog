@@ -202,6 +202,17 @@ function App() {
     window.location.href = 'https://wa.me/244936218497';
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDark ? 'dark bg-gray-900' : 'bg-gray-100'}`}>
       {/* Mobile Menu Button */}
@@ -216,21 +227,21 @@ function App() {
       <div className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 md:hidden ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <div className={`fixed inset-y-0 left-0 w-64 bg-white dark:bg-gray-800 transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="p-6 space-y-4">
-            <a href="#about" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
+            <button onClick={() => scrollToSection('about')} className="flex w-full items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300">
               <User /> {translations[lang].about}
-            </a>
-            <a href="#skills" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
+            </button>
+            <button onClick={() => scrollToSection('skills')} className="flex w-full items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300">
               <Wrench /> {translations[lang].skills}
-            </a>
-            <a href="#more" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
+            </button>
+            <button onClick={() => scrollToSection('more')} className="flex w-full items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300">
               <Book /> {translations[lang].more}
-            </a>
-            <a href="#portfolio" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
+            </button>
+            <button onClick={() => scrollToSection('portfolio')} className="flex w-full items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300">
               <Briefcase /> {translations[lang].portfolio}
-            </a>
-            <a href="#contact" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
+            </button>
+            <button onClick={() => scrollToSection('contact')} className="flex w-full items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300">
               <Mail /> {translations[lang].contact}
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -319,55 +330,102 @@ function App() {
           {/* Profile Section */}
           <div className="text-center mb-12 animate-fadeIn">
             <div className="relative inline-block group">
-              <img 
-                src="https://scontent.flad4-1.fna.fbcdn.net/v/t39.30808-6/449778615_1002714981530401_6679711823714196239_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEkGOlBQM444vlwYcxvZ1wm6i99EcXf933qL30Rxd_3fU9XYFCqsexwUndy3HSukyBYdMKdUd0Yti3Gv8aU6b0i&_nc_ohc=E5v_elPICMoQ7kNvgEtxiLc&_nc_oc=AdhqI8gxzYQz_BOAc-ZsJ_XvKPreozOy5GW1g8-YMLGEZNIcZiMYy84jmKeaHY3G4NMfM8dbUQ7jwqvJBEjc5ZM1&_nc_zt=23&_nc_ht=scontent.flad4-1.fna&_nc_gid=AlFVvNZDwGR62wwsBSgPKl1&oh=00_AYHmIS04NSp-W3ekIo-4aA_jcsDYBt_srGzEIm-O4O-I2w&oe=67D1B85D" 
-                alt="Profile" 
-                className="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-blue-500 p-1 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:border-blue-600"
-              />
-              <div className="absolute inset-0 rounded-full bg-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              {/* Image Container */}
+              <div className="relative rounded-full p-1 bg-blue-500 dark:bg-blue-600">
+                <div className="relative rounded-full p-1 bg-white dark:bg-gray-800 overflow-hidden transform transition-all duration-500 group-hover:scale-105">
+                  <img 
+                    src="https://scontent.flad4-1.fna.fbcdn.net/v/t39.30808-6/449778615_1002714981530401_6679711823714196239_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEkGOlBQM444vlwYcxvZ1wm6i99EcXf933qL30Rxd_3fU9XYFCqsexwUndy3HSukyBYdMKdUd0Yti3Gv8aU6b0i&_nc_ohc=E5v_elPICMoQ7kNvgEtxiLc&_nc_oc=AdhqI8gxzYQz_BOAc-ZsJ_XvKPreozOy5GW1g8-YMLGEZNIcZiMYy84jmKeaHY3G4NMfM8dbUQ7jwqvJBEjc5ZM1&_nc_zt=23&_nc_ht=scontent.flad4-1.fna&_nc_gid=AlFVvNZDwGR62wwsBSgPKl1&oh=00_AYHmIS04NSp-W3ekIo-4aA_jcsDYBt_srGzEIm-O4O-I2w&oe=67D1B85D" 
+                    alt="Profile" 
+                    className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover transform transition-transform duration-700 group-hover:rotate-6 group-hover:scale-110"
+                  />
+                  
+                  {/* Shine Effect */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/0 via-white/70 to-white/0 opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-700 animate-shine"></div>
+                </div>
+              </div>
             </div>
-            <h1 className="mt-4 text-2xl font-bold text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
+            
+            <h1 className="mt-6 text-3xl font-bold text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
               {translations[lang].name}
             </h1>
           </div>
+
+          {/* Add new keyframe animations */}
+          <style jsx>{`
+            @keyframes gradient-xy {
+              0%, 100% {
+                background-position: 0% 50%;
+                background-size: 400% 400%;
+              }
+              25% {
+                background-position: 100% 50%;
+                background-size: 400% 400%;
+              }
+              50% {
+                background-position: 100% 100%;
+                background-size: 400% 400%;
+              }
+              75% {
+                background-position: 0% 100%;
+                background-size: 400% 400%;
+              }
+            }
+
+            @keyframes shine {
+              0% {
+                transform: translateX(-100%) rotate(45deg);
+              }
+              100% {
+                transform: translateX(100%) rotate(45deg);
+              }
+            }
+
+            .animate-gradient-xy {
+              animation: gradient-xy 15s ease infinite;
+            }
+
+            .animate-shine {
+              animation: shine 2s infinite;
+            }
+          `}</style>
 
           {/* Navigation */}
           <nav className="mb-12 hidden md:block animate-fadeIn">
             <ul className="flex flex-wrap justify-center gap-4 md:gap-8">
               <li className="animate-slideDown" style={{ animationDelay: '0.1s' }}>
-                <a href="#about" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('about')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
                   <User className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
                   <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].about}</span>
-                </a>
+                </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.2s' }}>
-                <a href="#skills" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('skills')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
                   <Wrench className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
                   <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].skills}</span>
-                </a>
+                </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.3s' }}>
-                <a href="#more" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('more')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
                   <Book className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
                   <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].more}</span>
-                </a>
+                </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.4s' }}>
-                <a href="#portfolio" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('portfolio')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
                   <Briefcase className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
                   <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].portfolio}</span>
-                </a>
+                </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.5s' }}>
-                <a href="#contact" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('contact')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
                   <Mail className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
                   <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].contact}</span>
-                </a>
+                </button>
               </li>
             </ul>
           </nav>
