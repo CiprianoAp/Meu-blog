@@ -7,9 +7,9 @@ const translations = {
     more: 'More',
     portfolio: 'Portfolio',
     name: 'Aparecido Manuel (AP)',
-    bio: 'Software developer since 2015. I fell in love with app creation during high school in TLP class when I discovered that for an application to work, it needs a set of instructions (code) behind it. Since then, I developed a huge passion for writing computer code. Later, I started working exclusively with the C# programming language for desktop.',
+    bio: 'Software developer with a journey that began in 2015. My passion for programming ignited during high school in TLP (Programming Logic Techniques) class, where I discovered the fundamental truth that applications are powered by carefully crafted instructions (code). This revelation sparked an enduring passion for computer programming. I initially specialized in desktop development using C#, which laid a strong foundation for my career in software development.',
     education: 'Graduated in Computer and Communication Engineering from Óscar Ribas University (UOR), specializing in programming. Former web development professor at CEFMIDIA training center. Worked at Theus as a Designer but currently working in helpdesk at Óscar Ribas University.',
-    availability: 'Available for front-end or back-end programming positions',
+    availability: 'Available for Frontend or Backend Development positions',
     contact: 'Contact Me!',
     send: 'Send',
     name_label: 'Name',
@@ -19,16 +19,27 @@ const translations = {
     phone: 'Phone',
     social: 'Social Networks',
     skills: 'Skills',
-    chat_whatsapp: 'Chat on WhatsApp'
+    chat_whatsapp: 'Chat on WhatsApp',
+    viewProject: 'View Project',
+    projectDescription: 'Project Description',
+    technologies: 'Technologies Used',
+    onlineTicket: 'Online Ticket Purchase',
+    ticketDesc: 'A web application for purchasing event tickets online. Features include user authentication, seat selection, and secure payment processing.',
+    portfolioWebsite: 'Portfolio Website',
+    portfolioDesc: 'Personal portfolio website built with React and Tailwind CSS, featuring responsive design and smooth animations.',
+    comingSoon: 'Coming Soon',
+    comingDesc: 'More exciting projects are in development. Stay tuned!',
+    meEncontre: 'Me Encontre - AJMcod',
+    meEncontreDesc: 'A location-based service platform developed with AJMcod. Features include user geolocation, service provider search, and real-time updates.'
   },
   pt: {
     about: 'Sobre',
     more: 'Mais',
     portfolio: 'Portfólio',
     name: 'Aparecido Manuel (AP)',
-    bio: 'Desenvolvedor de software desde 2015. Me apaixonei em criação de app desde o ensino médio na aula de TLP quando descobri nesta mesma aula, que para uma aplicação funcionar é necessário um conjunto de instruções (código) por detrás dela. Desde aí então cresceu-me uma enorme paixão em escrever código de computador. Posteriormente comecei a trabalhar apenas com a linguagem de programação C# para desktop.',
+    bio: 'Desenvolvedor de software com uma jornada iniciada em 2015. Minha paixão pela programação nasceu durante o ensino médio, nas aulas de TLP (Técnicas de Lógica de Programação), onde descobri que cada aplicação é movida por um conjunto cuidadosamente elaborado de instruções (código). Esta descoberta despertou uma paixão duradoura pela programação. Iniciei minha especialização no desenvolvimento desktop com C#, o que estabeleceu uma base sólida para minha carreira em desenvolvimento de software.',
     education: 'Licenciado em engenharia informática e comunicação pela Universidade Óscar Ribas (UOR), tendo como especialidade programação. Já foi professor de desenvolvimento de web no centro de formação CEFMIDIA. Trabalhei na Theus como Designer mas atualmente trabalho na área de helpdesk na universidade Óscar Ribas.',
-    availability: 'Disponível para vaga de programação front ou back',
+    availability: 'Disponível para posições de Desenvolvimento Frontend ou Backend',
     contact: 'Fala comigo!',
     send: 'Enviar',
     name_label: 'Nome',
@@ -38,16 +49,27 @@ const translations = {
     phone: 'Telefone',
     social: 'Redes sociais',
     skills: 'Habilidades',
-    chat_whatsapp: 'Conversar no WhatsApp'
+    chat_whatsapp: 'Conversar no WhatsApp',
+    viewProject: 'Ver Projeto',
+    projectDescription: 'Descrição do Projeto',
+    technologies: 'Tecnologias Utilizadas',
+    onlineTicket: 'Compra de Bilhete Online',
+    ticketDesc: 'Uma aplicação web para compra de bilhetes de eventos online. Inclui autenticação de usuário, seleção de assentos e processamento seguro de pagamentos.',
+    portfolioWebsite: 'Website Portfólio',
+    portfolioDesc: 'Website portfólio pessoal construído com React e Tailwind CSS, apresentando design responsivo e animações suaves.',
+    comingSoon: 'Em Breve',
+    comingDesc: 'Mais projetos emocionantes estão em desenvolvimento. Fique ligado!',
+    meEncontre: 'Me Encontre - AJMcod',
+    meEncontreDesc: 'Uma plataforma de serviços baseada em localização desenvolvida com AJMcod. Inclui geolocalização de usuários, busca de prestadores de serviços e atualizações em tempo real.'
   },
   es: {
     about: 'Sobre',
     more: 'Más',
     portfolio: 'Portafolio',
     name: 'Aparecido Manuel (AP)',
-    bio: 'Desarrollador de software desde 2015. Me enamoré de la creación de aplicaciones durante la escuela secundaria en la clase de TLP cuando descubrí que para que una aplicación funcione, necesita un conjunto de instrucciones (código) detrás. Desde entonces, desarrollé una gran pasión por escribir código de computadora.',
+    bio: 'Desarrollador de software con una trayectoria que comenzó en 2015. Mi pasión por la programación nació durante la escuela secundaria en la clase de TLP (Técnicas de Lógica de Programación), donde descubrí que cada aplicación funciona gracias a un conjunto cuidadosamente elaborado de instrucciones (código). Este descubrimiento despertó una pasión duradera por la programación. Inicié mi especialización en desarrollo de escritorio con C#, lo que estableció una base sólida para mi carrera en desarrollo de software.',
     education: 'Graduado en Ingeniería Informática y Comunicación por la Universidad Óscar Ribas (UOR), especializado en programación.',
-    availability: 'Disponible para posiciones de programación front-end o back-end',
+    availability: 'Disponible para posiciones de Desarrollo Frontend o Backend',
     contact: '¡Contáctame!',
     send: 'Enviar',
     name_label: 'Nombre',
@@ -57,7 +79,18 @@ const translations = {
     phone: 'Teléfono',
     social: 'Redes Sociales',
     skills: 'Habilidades',
-    chat_whatsapp: 'Chatear en WhatsApp'
+    chat_whatsapp: 'Chatear en WhatsApp',
+    viewProject: 'Ver Proyecto',
+    projectDescription: 'Descripción del Proyecto',
+    technologies: 'Tecnologías Utilizadas',
+    onlineTicket: 'Compra de Boletos en Línea',
+    ticketDesc: 'Una aplicación web para comprar boletos de eventos en línea. Incluye autenticación de usuario, selección de asientos y procesamiento seguro de pagos.',
+    portfolioWebsite: 'Sitio Web Portafolio',
+    portfolioDesc: 'Sitio web portafolio personal construido con React y Tailwind CSS, con diseño responsivo y animaciones suaves.',
+    comingSoon: 'Próximamente',
+    comingDesc: '¡Más proyectos emocionantes están en desarrollo. Mantente atento!',
+    meEncontre: 'Me Encontre - AJMcod',
+    meEncontreDesc: 'Una plataforma de servicios basada en ubicación desarrollada con AJMcod. Incluye geolocalización de usuarios, búsqueda de proveedores de servicios y actualizaciones en tiempo real.'
   }
 };
 
@@ -65,27 +98,80 @@ const skills = [
   {
     title: 'HTML',
     icon: 'fa-brands fa-html5 text-8xl',
-    items: []
+    items: [],
+    descriptions: {
+      en: 'HTML5 - The latest version of the web markup language, used to structure web content with semantic elements.',
+      pt: 'HTML5 - A versão mais recente da linguagem de marcação web, usada para estruturar conteúdo web com elementos semânticos.',
+      es: 'HTML5 - La última versión del lenguaje de marcado web, utilizado para estructurar contenido web con elementos semánticos.'
+    }
   },
   {
     title: 'CSS',
     icon: 'fa-brands fa-css3',
-    items: ['CSS', 'Tailwind']
+    items: ['CSS', 'Tailwind'],
+    descriptions: {
+      CSS: {
+        en: 'CSS3 - Modern styling language for web design, supporting animations, flexbox, and grid layouts.',
+        pt: 'CSS3 - Linguagem moderna de estilização para design web, com suporte a animações, flexbox e layouts em grid.',
+        es: 'CSS3 - Lenguaje moderno de estilo para diseño web, con soporte para animaciones, flexbox y diseños en cuadrícula.'
+      },
+      Tailwind: {
+        en: 'Tailwind CSS - A utility-first CSS framework for rapid UI development with pre-built components.',
+        pt: 'Tailwind CSS - Framework CSS utilitário para desenvolvimento rápido de UI com componentes pré-construídos.',
+        es: 'Tailwind CSS - Framework CSS utilitario para desarrollo rápido de UI con componentes preconstruidos.'
+      }
+    }
   },
   {
     title: 'JS',
     icon: 'fa-brands fa-js',
-    items: ['TypeScript', 'React']
+    items: ['TypeScript', 'React'],
+    descriptions: {
+      TypeScript: {
+        en: 'TypeScript - A typed superset of JavaScript that compiles to plain JavaScript, adding optional static types.',
+        pt: 'TypeScript - Um superconjunto tipado do JavaScript que compila para JavaScript puro, adicionando tipos estáticos opcionais.',
+        es: 'TypeScript - Un superconjunto tipado de JavaScript que compila a JavaScript puro, agregando tipos estáticos opcionales.'
+      },
+      React: {
+        en: 'React - A JavaScript library for building user interfaces with components and virtual DOM.',
+        pt: 'React - Uma biblioteca JavaScript para construir interfaces de usuário com componentes e DOM virtual.',
+        es: 'React - Una biblioteca JavaScript para construir interfaces de usuario con componentes y DOM virtual.'
+      }
+    }
   },
   {
     title: 'PHP',
     icon: 'fa-brands fa-php',
-    items: ['Laravel', 'PHP']
+    items: ['Laravel', 'PHP'],
+    descriptions: {
+      Laravel: {
+        en: 'Laravel - A PHP web application framework with expressive syntax and robust features.',
+        pt: 'Laravel - Um framework PHP para aplicações web com sintaxe expressiva e recursos robustos.',
+        es: 'Laravel - Un framework PHP para aplicaciones web con sintaxis expresiva y características robustas.'
+      },
+      PHP: {
+        en: 'PHP - A popular server-side scripting language designed for web development.',
+        pt: 'PHP - Uma linguagem popular de script do lado do servidor projetada para desenvolvimento web.',
+        es: 'PHP - Un lenguaje de scripting del lado del servidor popular diseñado para desarrollo web.'
+      }
+    }
   },
   {
     title: 'BD',
     icon: 'fa-solid fa-database',
-    items: ['MYSQL']
+    items: ['MYSQL', 'MongoDB'],
+    descriptions: {
+      MYSQL: {
+        en: 'MySQL - An open-source relational database management system.',
+        pt: 'MySQL - Um sistema de gerenciamento de banco de dados relacional de código aberto.',
+        es: 'MySQL - Un sistema de gestión de bases de datos relacionales de código abierto.'
+      },
+      MongoDB: {
+        en: 'MongoDB - A NoSQL database that provides high performance, high availability, and easy scalability.',
+        pt: 'MongoDB - Um banco de dados NoSQL que oferece alto desempenho, alta disponibilidade e fácil escalabilidade.',
+        es: 'MongoDB - Una base de datos NoSQL que proporciona alto rendimiento, alta disponibilidad y fácil escalabilidad.'
+      }
+    }
   }
 ];
 
@@ -93,17 +179,16 @@ function App() {
   const [isDark, setIsDark] = useState(false);
   const [lang, setLang] = useState<'en' | 'pt' | 'es'>('pt');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
   const toggleDark = () => {
     setIsDark(!isDark);
     document.documentElement.classList.toggle('dark');
   };
 
-  const toggleLang = () => {
-    const langs: ('en' | 'pt' | 'es')[] = ['en', 'pt', 'es'];
-    const currentIndex = langs.indexOf(lang);
-    const nextIndex = (currentIndex + 1) % langs.length;
-    setLang(langs[nextIndex]);
+  const changeLang = (newLang: 'en' | 'pt' | 'es') => {
+    setLang(newLang);
+    setIsLangMenuOpen(false);
   };
 
   const handleEmailClick = () => {
@@ -129,19 +214,19 @@ function App() {
         <div className={`fixed inset-y-0 left-0 w-64 bg-white dark:bg-gray-800 transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="p-6 space-y-4">
             <a href="#about" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
-              <User className="animate-bounce" /> {translations[lang].about}
+              <User /> {translations[lang].about}
             </a>
             <a href="#skills" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
-              <Wrench className="animate-bounce" /> {translations[lang].skills}
+              <Wrench /> {translations[lang].skills}
             </a>
             <a href="#more" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
-              <Book className="animate-bounce" /> {translations[lang].more}
+              <Book /> {translations[lang].more}
             </a>
             <a href="#portfolio" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
-              <Briefcase className="animate-bounce" /> {translations[lang].portfolio}
+              <Briefcase /> {translations[lang].portfolio}
             </a>
             <a href="#contact" className="flex items-center gap-2 text-lg font-medium text-gray-800 dark:text-white hover:text-blue-500 transform hover:translate-x-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>
-              <Mail className="animate-bounce" /> {translations[lang].contact}
+              <Mail /> {translations[lang].contact}
             </a>
           </div>
         </div>
@@ -165,24 +250,53 @@ function App() {
             className="p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:scale-110 transition-transform duration-200"
           >
             {isDark ? 
-              <Sun className="text-yellow-400 animate-spin-slow" /> : 
-              <Moon className="text-gray-600 animate-bounce" />
+              <Sun className="text-yellow-400" /> : 
+              <Moon className="text-gray-600" />
             }
           </button>
-          <button 
-            onClick={toggleLang}
-            className="p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:scale-110 transition-transform duration-200"
-          >
-            <Languages className={`${isDark ? 'text-white' : 'text-gray-600'} animate-pulse`} />
-          </button>
+          <div className="relative">
+            <button 
+              onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+              className="p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:scale-110 transition-transform duration-200 flex items-center gap-2"
+            >
+              <Languages className={`${isDark ? 'text-white' : 'text-gray-600'}`} />
+              <span className="text-sm font-medium text-gray-600 dark:text-white uppercase">{lang}</span>
+            </button>
+            
+            {isLangMenuOpen && (
+              <div className="absolute right-0 mt-2 w-48 rounded-lg bg-white dark:bg-gray-800 shadow-lg py-2">
+                <button
+                  onClick={() => changeLang('pt')}
+                  className={`flex items-center gap-2 w-full px-4 py-2 text-left hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors duration-200 ${lang === 'pt' ? 'text-blue-500' : 'text-gray-600 dark:text-gray-300'}`}
+                >
+                  <span className="text-lg">🇵🇹</span>
+                  Português
+                </button>
+                <button
+                  onClick={() => changeLang('en')}
+                  className={`flex items-center gap-2 w-full px-4 py-2 text-left hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors duration-200 ${lang === 'en' ? 'text-blue-500' : 'text-gray-600 dark:text-gray-300'}`}
+                >
+                  <span className="text-lg">🇬🇧</span>
+                  English
+                </button>
+                <button
+                  onClick={() => changeLang('es')}
+                  className={`flex items-center gap-2 w-full px-4 py-2 text-left hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors duration-200 ${lang === 'es' ? 'text-blue-500' : 'text-gray-600 dark:text-gray-300'}`}
+                >
+                  <span className="text-lg">🇪🇸</span>
+                  Español
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Social Links Sidebar (Desktop Only) */}
         <div className="fixed left-4 top-1/2 transform -translate-y-1/2 hidden md:flex flex-col gap-4 z-40">
-          <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
+          <a href="https://www.facebook.com/ciprianodos.santos.773" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
             <i className="fab fa-facebook text-2xl"></i>
           </a>
-          <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
+          <a href="https://www.linkedin.com/in/aparecido-manuel-54212720b/" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
             <i className="fab fa-linkedin text-2xl"></i>
           </a>
           <a 
@@ -215,35 +329,76 @@ function App() {
           </div>
 
           {/* Navigation */}
-          <nav className="mb-12 hidden md:block">
+          <nav className="mb-12 hidden md:block animate-fadeIn">
             <ul className="flex flex-wrap justify-center gap-4 md:gap-8">
-              <li>
-                <a href="#about" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:text-white text-gray-800 dark:text-white group">
-                  <User className="group-hover:rotate-12 transition-transform duration-300" /> {translations[lang].about}
+              <li className="animate-slideDown" style={{ animationDelay: '0.1s' }}>
+                <a href="#about" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                  <User className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].about}</span>
                 </a>
               </li>
-              <li>
-                <a href="#skills" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:text-white text-gray-800 dark:text-white group">
-                  <Wrench className="group-hover:rotate-12 transition-transform duration-300" /> {translations[lang].skills}
+              <li className="animate-slideDown" style={{ animationDelay: '0.2s' }}>
+                <a href="#skills" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                  <Wrench className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].skills}</span>
                 </a>
               </li>
-              <li>
-                <a href="#more" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:text-white text-gray-800 dark:text-white group">
-                  <Book className="group-hover:rotate-12 transition-transform duration-300" /> {translations[lang].more}
+              <li className="animate-slideDown" style={{ animationDelay: '0.3s' }}>
+                <a href="#more" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                  <Book className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].more}</span>
                 </a>
               </li>
-              <li>
-                <a href="#portfolio" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:text-white text-gray-800 dark:text-white group">
-                  <Briefcase className="group-hover:rotate-12 transition-transform duration-300" /> {translations[lang].portfolio}
+              <li className="animate-slideDown" style={{ animationDelay: '0.4s' }}>
+                <a href="#portfolio" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                  <Briefcase className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].portfolio}</span>
                 </a>
               </li>
-              <li>
-                <a href="#contact" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 hover:bg-blue-500 hover:text-white text-gray-800 dark:text-white group">
-                  <Mail className="group-hover:rotate-12 transition-transform duration-300" /> {translations[lang].contact}
+              <li className="animate-slideDown" style={{ animationDelay: '0.5s' }}>
+                <a href="#contact" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                  <Mail className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].contact}</span>
                 </a>
               </li>
             </ul>
           </nav>
+
+          {/* Add these styles to your existing styles or create a new style tag */}
+          <style jsx>{`
+            @keyframes slideDown {
+              from {
+                opacity: 0;
+                transform: translateY(-20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            .animate-slideDown {
+              animation: slideDown 0.5s ease-out forwards;
+            }
+
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+
+            .animate-fadeIn {
+              animation: fadeIn 1s ease-out;
+            }
+          `}</style>
 
           {/* Content Sections */}
           <div className="space-y-12">
@@ -254,85 +409,304 @@ function App() {
 
               {/* About Section */}
               <section id="about" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-pulse">
-                  <User size={20} className="animate-bounce" />
+                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <User size={20} />
                 </div>
                 <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transform hover:scale-102 transition-transform duration-300">
                   <p className="text-gray-600 dark:text-gray-300">
                     {translations[lang].bio}
                   </p>
                 </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-bounce">
-                  <ChevronDown size={20} className="animate-bounce" />
+                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <ChevronDown size={20} />
                 </div>
               </section>
 
               {/* Skills Section */}
               <section id="skills" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-pulse">
-                  <Wrench size={20} className="animate-spin-slow" />
+                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <Wrench size={20} />
                 </div>
                 <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {skills.map((skill, index) => (
                       <div 
                         key={index} 
-                        className="group p-4 bg-blue-500 dark:bg-blue-600 text-white rounded-lg transform transition-all duration-500 hover:scale-110 hover:rotate-3 hover:shadow-xl"
+                        className="group relative p-4 bg-blue-500 dark:bg-blue-600 text-white rounded-lg transform transition-all duration-500 hover:scale-105 hover:shadow-xl cursor-pointer"
                       >
-                        <h3 className="text-xl font-bold mb-4 group-hover:translate-y-[-5px] transition-transform duration-300">{skill.title}</h3>
+                        <h3 className="text-xl font-bold mb-4">{skill.title}</h3>
                         <div className="flex flex-col items-center gap-2">
-                          <i className={`${skill.icon} group-hover:scale-125 group-hover:rotate-12 transition-all duration-500`}></i>
-                          {skill.items.map((item, i) => (
-                            <p key={i} className="text-lg group-hover:translate-y-2 transition-transform duration-300">{item}</p>
-                          ))}
+                          <i className={`${skill.icon} text-4xl mb-2`}></i>
+                          {skill.items.length > 0 && (
+                            <div className="w-full">
+                              {skill.items.map((item, i) => (
+                                <div key={i} className="relative group/item">
+                                  <p className="text-lg p-2 hover:bg-blue-600 rounded transition-colors duration-200">
+                                    {item}
+                                  </p>
+                                  <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-72 z-20 transition-all duration-300 transform origin-center scale-95 group-hover/item:scale-100">
+                                    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl border-2 border-blue-500 animate-fadeIn">
+                                      <p className="text-sm text-gray-700 dark:text-gray-300">
+                                        {skill.descriptions[item][lang]}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                          {skill.items.length === 0 && (
+                            <div className="relative group/item w-full">
+                              <p className="text-lg p-2 hover:bg-blue-600 rounded transition-colors duration-200">
+                                {skill.title}
+                              </p>
+                              <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-72 z-20 transition-all duration-300 transform origin-center scale-95 group-hover/item:scale-100">
+                                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl border-2 border-blue-500 animate-fadeIn">
+                                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                                    {skill.descriptions[lang]}
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-bounce">
-                  <ChevronDown size={20} className="animate-bounce" />
+                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <ChevronDown size={20} />
                 </div>
               </section>
 
               {/* More Section */}
               <section id="more" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-pulse">
-                  <Book size={20} className="animate-bounce" />
+                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <Book size={20} />
                 </div>
-                <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transform hover:scale-102 transition-transform duration-300">
-                  <p className="text-gray-600 dark:text-gray-300">
-                    {translations[lang].education}
-                  </p>
-                  <p className="mt-4 font-bold text-gray-800 dark:text-white">
-                    {translations[lang].availability}
-                  </p>
+                <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+                  {/* Education */}
+                  <div className="mb-8">
+                    <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2">
+                      <i className="fas fa-graduation-cap text-blue-500"></i>
+                      Formação Acadêmica
+                    </h3>
+                    <div className="pl-4 border-l-2 border-blue-500">
+                      <div className="relative mb-8">
+                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
+                        <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                          Universidade Óscar Ribas (UOR)
+                        </h4>
+                        <p className="text-blue-500 dark:text-blue-400 font-medium">
+                          Licenciatura em Engenharia Informática e Comunicação
+                        </p>
+                        <p className="text-gray-600 dark:text-gray-300 mt-2">
+                          Especialização em Programação
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Professional Experience */}
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2">
+                      <i className="fas fa-briefcase text-blue-500"></i>
+                      Experiência Profissional
+                    </h3>
+                    <div className="pl-4 border-l-2 border-blue-500 space-y-8">
+                      {/* Current Position */}
+                      <div className="relative">
+                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
+                        <div className="group transform transition-all duration-300 hover:translate-x-2">
+                          <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                            Universidade Óscar Ribas
+                          </h4>
+                          <p className="text-blue-500 dark:text-blue-400">
+                            Analista de Helpdesk
+                          </p>
+                          <p className="text-gray-500 dark:text-gray-400">
+                            Atual
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* AJMcod Position */}
+                      <div className="relative">
+                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
+                        <div className="group transform transition-all duration-300 hover:translate-x-2">
+                          <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                            AJMcod
+                          </h4>
+                          <p className="text-blue-500 dark:text-blue-400">
+                            Desenvolvedor Full Stack
+                          </p>
+                          <p className="text-gray-500 dark:text-gray-400">
+                            Projeto Me Encontre
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Previous Positions */}
+                      <div className="relative">
+                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
+                        <div className="group transform transition-all duration-300 hover:translate-x-2">
+                          <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                            CEFMIDIA
+                          </h4>
+                          <p className="text-blue-500 dark:text-blue-400">
+                            Professor de Desenvolvimento Web
+                          </p>
+                          <p className="text-gray-500 dark:text-gray-400">
+                            Centro de Formação
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="relative">
+                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
+                        <div className="group transform transition-all duration-300 hover:translate-x-2">
+                          <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                            Theus
+                          </h4>
+                          <p className="text-blue-500 dark:text-blue-400">
+                            Designer
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Availability Banner */}
+                  <div className="mt-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-4 shadow-lg transform hover:scale-102 transition-all duration-300">
+                    <p className="text-white font-bold text-center text-lg">
+                      {translations[lang].availability}
+                    </p>
+                  </div>
                 </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-bounce">
-                  <ChevronDown size={20} className="animate-bounce" />
+                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <ChevronDown size={20} />
                 </div>
               </section>
 
               {/* Portfolio Section */}
               <section id="portfolio" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-pulse">
-                  <Briefcase size={20} className="animate-bounce" />
+                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <Briefcase size={20} />
                 </div>
                 <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-                  <div className="bg-blue-500 dark:bg-blue-600 p-4 rounded-lg text-white transform hover:scale-110 hover:rotate-2 transition-all duration-300 cursor-pointer group">
-                    <h3 className="text-xl font-bold mb-2 group-hover:translate-y-[-5px] transition-transform duration-300">Projeto</h3>
-                    <p className="group-hover:translate-y-2 transition-transform duration-300">Compra de bilhete online</p>
+                  <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+                    {translations[lang].portfolio}
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {/* Me Encontre Project */}
+                    <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                      <div className="relative h-48 overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 opacity-90"></div>
+                        <i className="fas fa-map-marker-alt absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"></i>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                          {translations[lang].meEncontre}
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4">
+                          {translations[lang].meEncontreDesc}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          <span className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-300 rounded-full text-sm">AJMcod</span>
+                          <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">React</span>
+                          <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">Node.js</span>
+                          <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <a href="#" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                          <span>{translations[lang].viewProject}</span>
+                          <i className="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Online Ticket Project */}
+                    <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                      <div className="relative h-48 overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-90"></div>
+                        <i className="fas fa-ticket-alt absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"></i>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                          {translations[lang].onlineTicket}
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4">
+                          {translations[lang].ticketDesc}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">React</span>
+                          <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">Node.js</span>
+                          <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <a href="#" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                          <span>{translations[lang].viewProject}</span>
+                          <i className="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Portfolio Website Project */}
+                    <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                      <div className="relative h-48 overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 opacity-90"></div>
+                        <i className="fas fa-laptop-code absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"></i>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                          {translations[lang].portfolioWebsite}
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4">
+                          {translations[lang].portfolioDesc}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">React</span>
+                          <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-300 rounded-full text-sm">Tailwind</span>
+                          <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-300 rounded-full text-sm">TypeScript</span>
+                        </div>
+                        <a href="#" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                          <span>{translations[lang].viewProject}</span>
+                          <i className="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Coming Soon Project */}
+                    <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                      <div className="relative h-48 overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-red-500 opacity-90"></div>
+                        <i className="fas fa-rocket absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"></i>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                          {translations[lang].comingSoon}
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4">
+                          {translations[lang].comingDesc}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm">???</span>
+                        </div>
+                        <span className="inline-flex items-center gap-2 text-gray-400 cursor-not-allowed">
+                          <span>{translations[lang].viewProject}</span>
+                          <i className="fas fa-lock"></i>
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-bounce">
-                  <ChevronDown size={20} className="animate-bounce" />
+                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <ChevronDown size={20} />
                 </div>
               </section>
 
               {/* Contact Form */}
-              <section id="contact" className="relative">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10 animate-pulse">
-                  <Mail size={20} className="animate-bounce" />
+              <section id="contact" className="relative pb-16">
+                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <Mail size={20} />
                 </div>
                 <div className="ml-14">
                   <form 
@@ -411,6 +785,9 @@ function App() {
                     </div>
                   </form>
                 </div>
+                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                  <ChevronDown size={20} />
+                </div>
               </section>
             </div>
 
@@ -444,10 +821,10 @@ function App() {
                   {translations[lang].social}
                 </h3>
                 <div className="flex gap-4">
-                  <a href="#" className="text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
+                  <a href="https://www.facebook.com/ciprianodos.santos.773" className="text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
                     <i className="fab fa-facebook text-xl"></i>
                   </a>
-                  <a href="#" className="text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
+                  <a href="https://www.linkedin.com/in/aparecido-manuel-54212720b/" className="text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:rotate-12">
                     <i className="fab fa-linkedin text-xl"></i>
                   </a>
                   <a 
