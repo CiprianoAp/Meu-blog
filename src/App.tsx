@@ -328,188 +328,122 @@ function App() {
         {/* Main Content */}
         <div className="max-w-4xl mx-auto">
           {/* Profile Section */}
-          <div className="text-center mb-12 animate-fadeIn">
+          <div className="text-center mb-16 animate-fadeIn">
             <div className="relative inline-block group">
-              {/* Image Container */}
-              <div className="relative rounded-full p-1 bg-blue-500 dark:bg-blue-600">
-                <div className="relative rounded-full p-1 bg-white dark:bg-gray-800 overflow-hidden transform transition-all duration-500 group-hover:scale-105">
+              {/* Image Container with modern glass effect */}
+              <div className="relative rounded-full p-1.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                <div className="relative rounded-full p-1 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm overflow-hidden transform transition-all duration-700 group-hover:scale-105">
                   <img 
                     src="https://scontent.flad4-1.fna.fbcdn.net/v/t39.30808-6/449778615_1002714981530401_6679711823714196239_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEkGOlBQM444vlwYcxvZ1wm6i99EcXf933qL30Rxd_3fU9XYFCqsexwUndy3HSukyBYdMKdUd0Yti3Gv8aU6b0i&_nc_ohc=E5v_elPICMoQ7kNvgEtxiLc&_nc_oc=AdhqI8gxzYQz_BOAc-ZsJ_XvKPreozOy5GW1g8-YMLGEZNIcZiMYy84jmKeaHY3G4NMfM8dbUQ7jwqvJBEjc5ZM1&_nc_zt=23&_nc_ht=scontent.flad4-1.fna&_nc_gid=AlFVvNZDwGR62wwsBSgPKl1&oh=00_AYHmIS04NSp-W3ekIo-4aA_jcsDYBt_srGzEIm-O4O-I2w&oe=67D1B85D" 
                     alt="Profile" 
-                    className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover transform transition-transform duration-700 group-hover:rotate-6 group-hover:scale-110"
+                    className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover transform transition-all duration-700 group-hover:rotate-6 group-hover:scale-110"
                   />
                   
-                  {/* Shine Effect */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/0 via-white/70 to-white/0 opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-700 animate-shine"></div>
+                  {/* Modern shine effect */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/0 via-white/70 to-white/0 opacity-0 group-hover:opacity-40 blur-sm transition-all duration-700 animate-shine"></div>
                 </div>
               </div>
             </div>
             
-            <h1 className="mt-6 text-3xl font-bold text-gray-800 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
+            <h1 className="mt-8 text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 transition-all duration-300">
               {translations[lang].name}
             </h1>
+            <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              {translations[lang].bio}
+            </p>
           </div>
 
-          {/* Add new keyframe animations */}
-          <style jsx>{`
-            @keyframes gradient-xy {
-              0%, 100% {
-                background-position: 0% 50%;
-                background-size: 400% 400%;
-              }
-              25% {
-                background-position: 100% 50%;
-                background-size: 400% 400%;
-              }
-              50% {
-                background-position: 100% 100%;
-                background-size: 400% 400%;
-              }
-              75% {
-                background-position: 0% 100%;
-                background-size: 400% 400%;
-              }
-            }
-
-            @keyframes shine {
-              0% {
-                transform: translateX(-100%) rotate(45deg);
-              }
-              100% {
-                transform: translateX(100%) rotate(45deg);
-              }
-            }
-
-            .animate-gradient-xy {
-              animation: gradient-xy 15s ease infinite;
-            }
-
-            .animate-shine {
-              animation: shine 2s infinite;
-            }
-          `}</style>
-
           {/* Navigation */}
-          <nav className="mb-12 hidden md:block animate-fadeIn">
-            <ul className="flex flex-wrap justify-center gap-4 md:gap-8">
+          <nav className="mb-16 hidden md:block animate-fadeIn">
+            <ul className="flex flex-wrap justify-center gap-6 md:gap-8">
               <li className="animate-slideDown" style={{ animationDelay: '0.1s' }}>
-                <button onClick={() => scrollToSection('about')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
-                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                <button onClick={() => scrollToSection('about')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <User className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].about}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].about}</span>
                 </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.2s' }}>
-                <button onClick={() => scrollToSection('skills')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
-                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                <button onClick={() => scrollToSection('skills')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <Wrench className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].skills}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].skills}</span>
                 </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.3s' }}>
-                <button onClick={() => scrollToSection('more')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
-                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                <button onClick={() => scrollToSection('more')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <Book className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].more}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].more}</span>
                 </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.4s' }}>
-                <button onClick={() => scrollToSection('portfolio')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
-                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                <button onClick={() => scrollToSection('portfolio')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <Briefcase className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].portfolio}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].portfolio}</span>
                 </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.5s' }}>
-                <button onClick={() => scrollToSection('contact')} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 hover:text-white text-gray-800 dark:text-white group relative overflow-hidden">
-                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                <button onClick={() => scrollToSection('contact')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                  <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <Mail className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">{translations[lang].contact}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].contact}</span>
                 </button>
               </li>
             </ul>
           </nav>
 
-          {/* Add these styles to your existing styles or create a new style tag */}
-          <style jsx>{`
-            @keyframes slideDown {
-              from {
-                opacity: 0;
-                transform: translateY(-20px);
-              }
-              to {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-
-            .animate-slideDown {
-              animation: slideDown 0.5s ease-out forwards;
-            }
-
-            @keyframes fadeIn {
-              from {
-                opacity: 0;
-              }
-              to {
-                opacity: 1;
-              }
-            }
-
-            .animate-fadeIn {
-              animation: fadeIn 1s ease-out;
-            }
-          `}</style>
-
           {/* Content Sections */}
-          <div className="space-y-12">
+          <div className="space-y-16">
             {/* Timeline Container */}
             <div className="relative">
-              {/* Continuous Timeline Line */}
-              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-500 dark:bg-blue-400"></div>
+              {/* Modern timeline line with gradient */}
+              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
 
               {/* About Section */}
               <section id="about" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
                   <User size={20} />
                 </div>
-                <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transform hover:scale-102 transition-transform duration-300">
-                  <p className="text-gray-600 dark:text-gray-300">
+                <div className="ml-14 p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-500">
+                  <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-6">
+                    {translations[lang].about}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                     {translations[lang].bio}
                   </p>
                 </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
-                  <ChevronDown size={20} />
-                </div>
               </section>
 
-              {/* Skills Section */}
+              {/* Skills Section with modern cards */}
               <section id="skills" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
                   <Wrench size={20} />
                 </div>
-                <div className="ml-14 p-8 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-8">
+                <div className="ml-14 p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg">
+                  <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-8">
                     {translations[lang].skills}
                   </h2>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                     {skills.map((skill, index) => (
                       <div 
                         key={index} 
-                        className="group relative p-4 bg-blue-500 dark:bg-blue-600 text-white rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl cursor-pointer"
+                        className="group relative p-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden"
                       >
+                        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                         <h3 className="text-lg font-bold mb-3 text-center">{skill.title}</h3>
                         <div className="flex flex-col items-center gap-3">
-                          <i className={`${skill.icon} text-3xl mb-1`}></i>
+                          <i className={`${skill.icon} text-3xl mb-1 transform group-hover:scale-110 transition-transform duration-300`}></i>
                           {skill.items.length > 0 && (
                             <div className="w-full space-y-2">
                               {skill.items.map((item, i) => (
                                 <div key={i} className="relative group/item">
-                                  <p className="text-sm p-2 hover:bg-blue-600 rounded-lg transition-colors duration-200 text-center">
+                                  <p className="text-sm p-2 rounded-lg transition-all duration-200 text-center bg-white/10 hover:bg-white/20 backdrop-blur-sm">
                                     {item}
                                   </p>
                                   <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-full mt-2 -translate-x-1/2 w-64 z-20 transition-all duration-300 transform origin-top scale-95 group-hover/item:scale-100">
-                                    <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border-2 border-blue-500 animate-fadeIn">
+                                    <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-4 rounded-xl shadow-xl border border-white/20">
                                       <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                                         {skill.descriptions[item][lang]}
                                       </p>
@@ -519,120 +453,108 @@ function App() {
                               ))}
                             </div>
                           )}
-                          {skill.items.length === 0 && (
-                            <div className="relative group/item w-full">
-                              <p className="text-sm p-2 hover:bg-blue-600 rounded-lg transition-colors duration-200 text-center">
-                                {skill.title}
-                              </p>
-                              <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-full mt-2 -translate-x-1/2 w-64 z-20 transition-all duration-300 transform origin-top scale-95 group-hover/item:scale-100">
-                                <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border-2 border-blue-500 animate-fadeIn">
-                                  <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                                    {skill.descriptions[lang]}
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          )}
                         </div>
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
-                  <ChevronDown size={20} />
-                </div>
               </section>
 
               {/* More Section */}
               <section id="more" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
-                  <Book size={20} />
+                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
+                  <Book size={20} className="transform group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+                <div className="ml-14 p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500">
                   {/* Education */}
-                  <div className="mb-8">
-                    <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2">
-                      <i className="fas fa-graduation-cap text-blue-500"></i>
+                  <div className="mb-12">
+                    <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mb-8 flex items-center gap-3">
+                      <i className="fas fa-graduation-cap text-blue-500 text-3xl"></i>
                       Formação Acadêmica
                     </h3>
-                    <div className="pl-4 border-l-2 border-blue-500">
-                      <div className="relative mb-8">
-                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
-                        <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
-                          Universidade Óscar Ribas (UOR)
-                        </h4>
-                        <p className="text-blue-500 dark:text-blue-400 font-medium">
-                          Licenciatura em Engenharia Informática e Comunicação
-                        </p>
-                        <p className="text-gray-600 dark:text-gray-300 mt-2">
-                          Especialização em Programação
-                        </p>
+                    <div className="pl-8 border-l-2 border-gradient-to-b from-blue-500 via-purple-500 to-pink-500">
+                      <div className="relative mb-8 group">
+                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
+                        <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-500">
+                          <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+                            Universidade Óscar Ribas (UOR)
+                          </h4>
+                          <p className="text-lg font-medium text-blue-500 dark:text-blue-400 mt-2">
+                            Licenciatura em Engenharia Informática e Comunicação
+                          </p>
+                          <p className="text-gray-600 dark:text-gray-300 mt-2">
+                            Especialização em Programação
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   {/* Professional Experience */}
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2">
-                      <i className="fas fa-briefcase text-blue-500"></i>
+                    <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 mb-8 flex items-center gap-3">
+                      <i className="fas fa-briefcase text-purple-500 text-3xl"></i>
                       Experiência Profissional
                     </h3>
-                    <div className="pl-4 border-l-2 border-blue-500 space-y-8">
+                    <div className="pl-8 border-l-2 border-gradient-to-b from-purple-500 via-pink-500 to-blue-500 space-y-8">
                       {/* Current Position */}
-                      <div className="relative">
-                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
-                        <div className="group transform transition-all duration-300 hover:translate-x-2">
-                          <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                      <div className="relative group">
+                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
+                        <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:translate-x-2 transition-all duration-500">
+                          <div className="absolute top-0 right-0 mt-4 mr-4">
+                            <span className="px-3 py-1 text-sm bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full shadow-lg">
+                              Atual
+                            </span>
+                          </div>
+                          <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
                             Universidade Óscar Ribas
                           </h4>
-                          <p className="text-blue-500 dark:text-blue-400">
+                          <p className="text-lg font-medium text-purple-500 dark:text-purple-400 mt-2">
                             Analista de Helpdesk
-                          </p>
-                          <p className="text-gray-500 dark:text-gray-400">
-                            Atual
                           </p>
                         </div>
                       </div>
 
                       {/* AJMcod Position */}
-                      <div className="relative">
-                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
-                        <div className="group transform transition-all duration-300 hover:translate-x-2">
-                          <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                      <div className="relative group">
+                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
+                        <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:translate-x-2 transition-all duration-500">
+                          <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-blue-600">
                             AJMcod
                           </h4>
-                          <p className="text-blue-500 dark:text-blue-400">
+                          <p className="text-lg font-medium text-pink-500 dark:text-pink-400 mt-2">
                             Desenvolvedor Full Stack
                           </p>
-                          <p className="text-gray-500 dark:text-gray-400">
+                          <p className="text-gray-600 dark:text-gray-300 mt-2">
                             Projeto Me Encontre
                           </p>
                         </div>
                       </div>
 
-                      {/* Previous Positions */}
-                      <div className="relative">
-                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
-                        <div className="group transform transition-all duration-300 hover:translate-x-2">
-                          <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                      {/* CEFMIDIA Position */}
+                      <div className="relative group">
+                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
+                        <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:translate-x-2 transition-all duration-500">
+                          <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
                             CEFMIDIA
                           </h4>
-                          <p className="text-blue-500 dark:text-blue-400">
+                          <p className="text-lg font-medium text-blue-500 dark:text-blue-400 mt-2">
                             Professor de Desenvolvimento Web
                           </p>
-                          <p className="text-gray-500 dark:text-gray-400">
+                          <p className="text-gray-600 dark:text-gray-300 mt-2">
                             Centro de Formação
                           </p>
                         </div>
                       </div>
 
-                      <div className="relative">
-                        <div className="absolute -left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
-                        <div className="group transform transition-all duration-300 hover:translate-x-2">
-                          <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                      {/* Theus Position */}
+                      <div className="relative group">
+                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
+                        <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:translate-x-2 transition-all duration-500">
+                          <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-600">
                             Theus
                           </h4>
-                          <p className="text-blue-500 dark:text-blue-400">
+                          <p className="text-lg font-medium text-indigo-500 dark:text-indigo-400 mt-2">
                             Designer
                           </p>
                         </div>
@@ -641,14 +563,14 @@ function App() {
                   </div>
 
                   {/* Availability Banner */}
-                  <div className="mt-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-4 shadow-lg transform hover:scale-102 transition-all duration-300">
-                    <p className="text-white font-bold text-center text-lg">
-                      {translations[lang].availability}
-                    </p>
+                  <div className="mt-12 relative group">
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl opacity-75 blur-lg group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                      <p className="text-white font-bold text-center text-xl">
+                        {translations[lang].availability}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
-                  <ChevronDown size={20} />
                 </div>
               </section>
 
