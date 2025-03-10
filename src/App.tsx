@@ -488,26 +488,29 @@ function App() {
                 <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
                   <Wrench size={20} />
                 </div>
-                <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="ml-14 p-8 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-8">
+                    {translations[lang].skills}
+                  </h2>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                     {skills.map((skill, index) => (
                       <div 
                         key={index} 
-                        className="group relative p-4 bg-blue-500 dark:bg-blue-600 text-white rounded-lg transform transition-all duration-500 hover:scale-105 hover:shadow-xl cursor-pointer"
+                        className="group relative p-4 bg-blue-500 dark:bg-blue-600 text-white rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl cursor-pointer"
                       >
-                        <h3 className="text-xl font-bold mb-4">{skill.title}</h3>
-                        <div className="flex flex-col items-center gap-2">
-                          <i className={`${skill.icon} text-4xl mb-2`}></i>
+                        <h3 className="text-lg font-bold mb-3 text-center">{skill.title}</h3>
+                        <div className="flex flex-col items-center gap-3">
+                          <i className={`${skill.icon} text-3xl mb-1`}></i>
                           {skill.items.length > 0 && (
-                            <div className="w-full">
+                            <div className="w-full space-y-2">
                               {skill.items.map((item, i) => (
                                 <div key={i} className="relative group/item">
-                                  <p className="text-lg p-2 hover:bg-blue-600 rounded transition-colors duration-200">
+                                  <p className="text-sm p-2 hover:bg-blue-600 rounded-lg transition-colors duration-200 text-center">
                                     {item}
                                   </p>
-                                  <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-72 z-20 transition-all duration-300 transform origin-center scale-95 group-hover/item:scale-100">
-                                    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl border-2 border-blue-500 animate-fadeIn">
-                                      <p className="text-sm text-gray-700 dark:text-gray-300">
+                                  <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-full mt-2 -translate-x-1/2 w-64 z-20 transition-all duration-300 transform origin-top scale-95 group-hover/item:scale-100">
+                                    <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border-2 border-blue-500 animate-fadeIn">
+                                      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                                         {skill.descriptions[item][lang]}
                                       </p>
                                     </div>
@@ -518,12 +521,12 @@ function App() {
                           )}
                           {skill.items.length === 0 && (
                             <div className="relative group/item w-full">
-                              <p className="text-lg p-2 hover:bg-blue-600 rounded transition-colors duration-200">
+                              <p className="text-sm p-2 hover:bg-blue-600 rounded-lg transition-colors duration-200 text-center">
                                 {skill.title}
                               </p>
-                              <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-72 z-20 transition-all duration-300 transform origin-center scale-95 group-hover/item:scale-100">
-                                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl border-2 border-blue-500 animate-fadeIn">
-                                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                              <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-full mt-2 -translate-x-1/2 w-64 z-20 transition-all duration-300 transform origin-top scale-95 group-hover/item:scale-100">
+                                <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border-2 border-blue-500 animate-fadeIn">
+                                  <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                                     {skill.descriptions[lang]}
                                   </p>
                                 </div>
