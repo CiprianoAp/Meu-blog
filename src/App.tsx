@@ -31,7 +31,19 @@ const translations = {
     comingDesc: 'More exciting projects are in development. Stay tuned!',
     meEncontre: 'Me Encontre - AJMcod',
     meEncontreDesc: 'A location-based service platform developed with AJMcod. Features include user geolocation, service provider search, and real-time updates.',
-    rights: 'All rights reserved.'
+    rights: 'All rights reserved.',
+    academic: 'Academic Formation',
+    professional: 'Professional Experience',
+    current: 'Current',
+    trainingCenter: 'Training Center',
+    university: 'Óscar Ribas University (UOR)',
+    computerEngineering: 'Computer and Communication Engineering',
+    programmingSpecialization: 'Programming Specialization',
+    helpdesk: 'Helpdesk Analyst',
+    fullstack: 'Full Stack Developer',
+    webDev: 'Web Development Professor',
+    designer: 'Designer',
+    meEncontreProject: 'Me Encontre Project'
   },
   pt: {
     about: 'Sobre',
@@ -62,7 +74,19 @@ const translations = {
     comingDesc: 'Mais projetos emocionantes estão em desenvolvimento. Fique ligado!',
     meEncontre: 'Me Encontre - AJMcod',
     meEncontreDesc: 'Uma plataforma de serviços baseada em localização desenvolvida com AJMcod. Inclui geolocalização de usuários, busca de prestadores de serviços e atualizações em tempo real.',
-    rights: 'Todos os direitos reservados.'
+    rights: 'Todos os direitos reservados.',
+    academic: 'Formação Acadêmica',
+    professional: 'Experiência Profissional',
+    current: 'Atual',
+    trainingCenter: 'Centro de Formação',
+    university: 'Universidade Óscar Ribas (UOR)',
+    computerEngineering: 'Licenciatura em Engenharia Informática e Comunicação',
+    programmingSpecialization: 'Especialização em Programação',
+    helpdesk: 'Analista de Helpdesk',
+    fullstack: 'Desenvolvedor Full Stack',
+    webDev: 'Professor de Desenvolvimento Web',
+    designer: 'Designer',
+    meEncontreProject: 'Projeto Me Encontre'
   },
   es: {
     about: 'Sobre',
@@ -93,7 +117,19 @@ const translations = {
     comingDesc: '¡Más proyectos emocionantes están en desarrollo. Mantente atento!',
     meEncontre: 'Me Encontre - AJMcod',
     meEncontreDesc: 'Una plataforma de servicios basada en ubicación desarrollada con AJMcod. Incluye geolocalización de usuarios, búsqueda de proveedores de servicios y actualizaciones en tiempo real.',
-    rights: 'Todos los derechos reservados.'
+    rights: 'Todos los derechos reservados.',
+    academic: 'Formación Académica',
+    professional: 'Experiencia Profesional',
+    current: 'Actual',
+    trainingCenter: 'Centro de Formación',
+    university: 'Universidad Óscar Ribas (UOR)',
+    computerEngineering: 'Ingeniería en Informática y Comunicación',
+    programmingSpecialization: 'Especialización en Programación',
+    helpdesk: 'Analista de Helpdesk',
+    fullstack: 'Desarrollador Full Stack',
+    webDev: 'Profesor de Desarrollo Web',
+    designer: 'Diseñador',
+    meEncontreProject: 'Proyecto Me Encontre'
   }
 };
 
@@ -420,7 +456,8 @@ function App() {
                   <Wrench size={20} />
                 </div>
                 <div className="ml-14 p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg">
-                  <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-8">
+                  <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-8 flex items-center gap-3">
+                    <i className="fas fa-tools text-purple-500 text-3xl"></i>
                     {translations[lang].skills}
                   </h2>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
@@ -443,7 +480,7 @@ function App() {
                                   <div className="opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible absolute left-1/2 top-full mt-2 -translate-x-1/2 w-64 z-20 transition-all duration-300 transform origin-top scale-95 group-hover/item:scale-100">
                                     <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-4 rounded-xl shadow-xl border border-white/20">
                                       <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                                        {skill.descriptions[item][lang]}
+                                        {skill.descriptions[item as keyof typeof skill.descriptions]?.[lang] || ''}
                                       </p>
                                     </div>
                                   </div>
@@ -468,20 +505,20 @@ function App() {
                   <div className="mb-12">
                     <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mb-8 flex items-center gap-3">
                       <i className="fas fa-graduation-cap text-blue-500 text-3xl"></i>
-                      Formação Acadêmica
+                      {translations[lang].academic}
                     </h3>
                     <div className="pl-8 border-l-2 border-gradient-to-b from-blue-500 via-purple-500 to-pink-500">
                       <div className="relative mb-8 group">
                         <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
-                        <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-500">
+                        <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:translate-x-2 transition-all duration-500">
                           <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-                            Universidade Óscar Ribas (UOR)
+                            {translations[lang].university}
                           </h4>
                           <p className="text-lg font-medium text-blue-500 dark:text-blue-400 mt-2">
-                            Licenciatura em Engenharia Informática e Comunicação
+                            {translations[lang].computerEngineering}
                           </p>
                           <p className="text-gray-600 dark:text-gray-300 mt-2">
-                            Especialização em Programação
+                            {translations[lang].programmingSpecialization}
                           </p>
                         </div>
                       </div>
@@ -492,7 +529,7 @@ function App() {
                   <div>
                     <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 mb-8 flex items-center gap-3">
                       <i className="fas fa-briefcase text-purple-500 text-3xl"></i>
-                      Experiência Profissional
+                      {translations[lang].professional}
                     </h3>
                     <div className="pl-8 border-l-2 border-gradient-to-b from-purple-500 via-pink-500 to-blue-500 space-y-8">
                       {/* Current Position */}
@@ -501,14 +538,14 @@ function App() {
                         <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:translate-x-2 transition-all duration-500">
                           <div className="absolute top-0 right-0 mt-4 mr-4">
                             <span className="px-3 py-1 text-sm bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full shadow-lg">
-                              Atual
+                              {translations[lang].current}
                             </span>
                           </div>
                           <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-                            Universidade Óscar Ribas
+                            {translations[lang].university}
                           </h4>
                           <p className="text-lg font-medium text-purple-500 dark:text-purple-400 mt-2">
-                            Analista de Helpdesk
+                            {translations[lang].helpdesk}
                           </p>
                         </div>
                       </div>
@@ -521,10 +558,10 @@ function App() {
                             AJMcod
                           </h4>
                           <p className="text-lg font-medium text-pink-500 dark:text-pink-400 mt-2">
-                            Desenvolvedor Full Stack
+                            {translations[lang].fullstack}
                           </p>
                           <p className="text-gray-600 dark:text-gray-300 mt-2">
-                            Projeto Me Encontre
+                            {translations[lang].meEncontreProject}
                           </p>
                         </div>
                       </div>
@@ -537,10 +574,10 @@ function App() {
                             CEFMIDIA
                           </h4>
                           <p className="text-lg font-medium text-blue-500 dark:text-blue-400 mt-2">
-                            Professor de Desenvolvimento Web
+                            {translations[lang].webDev}
                           </p>
                           <p className="text-gray-600 dark:text-gray-300 mt-2">
-                            Centro de Formação
+                            {translations[lang].trainingCenter}
                           </p>
                         </div>
                       </div>
@@ -553,7 +590,7 @@ function App() {
                             Theus
                           </h4>
                           <p className="text-lg font-medium text-indigo-500 dark:text-indigo-400 mt-2">
-                            Designer
+                            {translations[lang].designer}
                           </p>
                         </div>
                       </div>
