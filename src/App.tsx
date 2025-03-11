@@ -345,7 +345,7 @@ function App() {
               </div>
             </div>
             
-            <h1 className="mt-8 text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 transition-all duration-300">
+            <h1 className="mt-8 text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 transition-all duration-300">
               {translations[lang].name}
             </h1>
             
@@ -353,40 +353,40 @@ function App() {
 
           {/* Navigation */}
           <nav className="mb-16 hidden md:block animate-fadeIn">
-            <ul className="flex flex-wrap justify-center gap-6 md:gap-8">
+            <ul className="flex justify-center items-center gap-4">
               <li className="animate-slideDown" style={{ animationDelay: '0.1s' }}>
-                <button onClick={() => scrollToSection('about')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('about')} className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden whitespace-nowrap">
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <User className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].about}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-base font-medium">{translations[lang].about}</span>
                 </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.2s' }}>
-                <button onClick={() => scrollToSection('skills')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('skills')} className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden whitespace-nowrap">
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <Wrench className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].skills}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-base font-medium">{translations[lang].skills}</span>
                 </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.3s' }}>
-                <button onClick={() => scrollToSection('more')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('more')} className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden whitespace-nowrap">
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <Book className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].more}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-base font-medium">{translations[lang].more}</span>
                 </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.4s' }}>
-                <button onClick={() => scrollToSection('portfolio')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('portfolio')} className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden whitespace-nowrap">
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <Briefcase className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].portfolio}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-base font-medium">{translations[lang].portfolio}</span>
                 </button>
               </li>
               <li className="animate-slideDown" style={{ animationDelay: '0.5s' }}>
-                <button onClick={() => scrollToSection('contact')} className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden">
+                <button onClick={() => scrollToSection('contact')} className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 text-gray-800 dark:text-white group relative overflow-hidden whitespace-nowrap">
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
                   <Mail className="relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium">{translations[lang].contact}</span>
+                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300 text-base font-medium">{translations[lang].contact}</span>
                 </button>
               </li>
             </ul>
@@ -563,8 +563,8 @@ function App() {
                   {/* Availability Banner */}
                   <div className="mt-12 relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl opacity-75 blur-lg group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                      <p className="text-white font-bold text-center text-xl">
+                    <div className="relative p-6 bg-white dark:bg-gray-800/10 backdrop-blur-sm rounded-2xl border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300">
+                      <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:text-white font-bold text-center text-xl">
                         {translations[lang].availability}
                       </p>
                     </div>
