@@ -401,7 +401,7 @@ function App() {
 
               {/* About Section */}
               <section id="about" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
+                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
                   <User size={20} />
                 </div>
                 <div className="ml-14 p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-500">
@@ -416,7 +416,7 @@ function App() {
 
               {/* Skills Section with modern cards */}
               <section id="skills" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
+                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
                   <Wrench size={20} />
                 </div>
                 <div className="ml-14 p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg">
@@ -531,7 +531,7 @@ function App() {
 
                       {/* CEFMIDIA Position */}
                       <div className="relative group">
-                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
+                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
                         <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:translate-x-2 transition-all duration-500">
                           <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
                             CEFMIDIA
@@ -547,7 +547,7 @@ function App() {
 
                       {/* Theus Position */}
                       <div className="relative group">
-                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
+                        <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow-lg transform group-hover:scale-125 transition-transform duration-300"></div>
                         <div className="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:translate-x-2 transition-all duration-500">
                           <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-600">
                             Theus
@@ -574,7 +574,7 @@ function App() {
 
               {/* Portfolio Section */}
               <section id="portfolio" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
                   <Briefcase size={20} />
                 </div>
                 <div className="ml-14 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
@@ -682,14 +682,14 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                <div className="absolute left-0 bottom-0 w-10 h-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
                   <ChevronDown size={20} />
                 </div>
               </section>
 
               {/* Contact Form */}
               <section id="contact" className="relative pb-16">
-                <div className="absolute left-0 top-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
                   <Mail size={20} className="animate-pulse" />
                 </div>
                 <div className="ml-14">
@@ -810,7 +810,7 @@ function App() {
                     </div>
                   </form>
                 </div>
-                <div className="absolute left-0 bottom-0 w-10 h-10 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center text-white z-10">
+                <div className="absolute left-0 bottom-0 w-10 h-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white z-10 shadow-lg">
                   <ChevronDown size={20} />
                 </div>
               </section>
